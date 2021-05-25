@@ -50,6 +50,8 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::post('/addadmin', [registercontroller::class,'addadmin']);
+
 Route::get('/login',[registercontroller :: class,'createlog']);
 Route::post('/login1',[registercontroller :: class,'check']);
 

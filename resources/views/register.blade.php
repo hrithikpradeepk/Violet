@@ -77,6 +77,35 @@
                 </div>
             </div>
         </section>
+        <form class="row contact_form" action="/addadmin" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                                {{csrf_field()}}
+                               
+
+                                <div class="col-md-12 form-group p_star" style='max-width:40%'>
+                                
+                                
+                                   
+                                    </div>
+                                                                
+                                        <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="name" name="name" value=""
+                                            placeholder="Username">
+
+                                            <input type="text" class="form-control" id="name" name="pass" value=""
+                                            placeholder=" Password">
+                                        <table>
+                                       
+                                        </table>
+                                    </div>
+        
+                                    <div class="col-md-12 form-group">
+                                      
+                                        <button type="submit" value="submit" class="btn_3">
+                                            Add
+                                        </button>
+                                       
+                                    </div>
+                                </form>
         <!--================Register_part end =================-->
     </main>
    

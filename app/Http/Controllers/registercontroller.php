@@ -76,7 +76,7 @@ class registercontroller extends Controller
         $register->save();
 
         $login=new loginmodel();
-        $login->UserName=$getphone;
+        $login->Username=$getphone;
         $login->Password=$getpass;
         $login->Usertype="Customer";
 
@@ -124,6 +124,23 @@ class registercontroller extends Controller
     {
         $datacust=registermodel::all();
         return view('viewcustomer',compact('datacust'));
+    }
+
+
+    public function addadmin(Request $request)
+    {
+        $getname=request('name');
+        $getpass=request('pass');
+
+        $login=new loginmodel();
+        $login->Username=$getname;
+        $login->Password=$getpass;
+        $login->Usertype="admin";
+
+ 
+        
+        $login->save();
+
     }
 
 
