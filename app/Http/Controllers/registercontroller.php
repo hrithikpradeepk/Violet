@@ -173,9 +173,9 @@ class registercontroller extends Controller
         //echo $p->password;
         
         
-            if($p->password == $getpass)
+            if($p->Password == $getpass)
             {
-                $ut=loginmodel::select('usertype')->where('UserName','like',"$getuser")->first();
+                $ut=loginmodel::select('usertype')->where('Username','like',"$getuser")->first();
                 //echo $ut->usertype;
                 if($ut->usertype == 'Customer')
                 {
