@@ -159,7 +159,7 @@ class registercontroller extends Controller
         //$name=$request->input();
         // $request->session()->put('sname',$getuser);
         // echo session('sname');
-        $u=loginmodel::select('UserName')->where('Username','like',"$getuser")->first();
+        $u=loginmodel::select('Username')->where('Username','like',"$getuser")->first();
         
         if(!$u)
         {
