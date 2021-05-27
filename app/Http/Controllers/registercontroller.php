@@ -175,9 +175,9 @@ class registercontroller extends Controller
         
             if($p->Password == $getpass)
             {
-                $ut=loginmodel::select('usertype')->where('Username','like',"$getuser")->first();
+                $ut=loginmodel::select('Usertype')->where('Username','like',"$getuser")->first();
                 //echo $ut->usertype;
-                if($ut->usertype == 'Customer')
+                if($ut->Usertype == 'Customer')
                 {
                     $i=registermodel::where('Phonenum','like',"$getuser")->first();
                     $request->session()->put('sname',$i->Name);
@@ -186,7 +186,7 @@ class registercontroller extends Controller
                     return redirect('/chome');
                 }
                 
-                else if($ut->usertype=='admin')
+                else if($ut->Usertype=='admin')
                 {
                     $i=loginmodel::select('Username')->where('Username','like',"$getuser")->first();
                     $request->session()->put('sname','admin');
