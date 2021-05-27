@@ -74,37 +74,12 @@
                             </div>
                            
                                 </div> 
-        <form class="row contact_form"  action="/addadmin" method="post">
-                                {{csrf_field()}}
-                                                             
-                                <div class="login_part_text_iner">
-                                
-                                        <div class="col-md-12  form-group p_star">
-                                        <br><BR><BR><BR><BR><BR><BR><BR><BR><BR>
-                                        <h3 style="margin-left:150px;">ADMIN</h3>
-                                       
-                                        <input type="text" class="form-control" id="name" name="name" value=""
-                                            placeholder="Username">
-                                        </div>
-                                        <div class="col-md-12  form-group p_star">
-                                            <input type="text" class="form-control" id="name" name="pass" value=""
-                                            placeholder=" Password">
-                                         </div>
-                                       
-                                 </div>
-        
-                                    <div class="col-md-12 form-group">
-                                      
-                                        <button type="submit" value="submit" class="btn_3">
-                                            Register
-                                        </button>
-                                       
-                                    </div>
-                                </form>
+       
                         </div>
                     </div>
                 </div>
             </div>
+          
         </section>
         <div>
                                     
