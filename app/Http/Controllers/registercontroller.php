@@ -169,7 +169,7 @@ class registercontroller extends Controller
         else
         {
         //echo $u->mailid;
-        $p=loginmodel::select('password')->where('UserName','like',"$getuser")->first();
+        $p=loginmodel::select('password')->where('Username','like',"$getuser")->first();
         //echo $p->password;
         
         
