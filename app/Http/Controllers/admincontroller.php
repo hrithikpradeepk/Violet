@@ -367,7 +367,7 @@ class admincontroller extends Controller
       ->get();
    
 
-       return view('cart',['data'=>$data,'test'=>$test,'total'=>$total]);
+       return view('cart',['data'=>$data,'test'=>$test]);
     }
 
 
