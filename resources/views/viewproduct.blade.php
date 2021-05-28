@@ -436,24 +436,10 @@ $(document).ready(function(){
 
 <script type="text/javascript">
   
-  $("#json").on("click",function(){
-    $("#example").tableHTMLExport({
-      type:'json',
-      filename:'sample.json'
-    });
-  });
-
   $("#pdf").on("click",function(){
     $("#example").tableHTMLExport({
       type:'pdf',
       filename:'sample.pdf'
-    });
-  });
-
-  $("#csv").on("click",function(){
-    $("#example").tableHTMLExport({
-      type:'csv',
-      filename:'sample.csv'
     });
   });
 

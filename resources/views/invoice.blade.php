@@ -110,7 +110,7 @@ $tp=admincontroller::total();
                                 
                                 <td><STRONG><h4>Total Amount:</h4></STRONG></td>
                                 <td></td>
-                                <td><STRONG><h4><i class="fas fa-rupee-sign"></i>{{$tp}}</h4></STRONG></td>
+                                <td><STRONG><h4>₹{{$tp}}</h4></STRONG></td>
                                 </tr>
                     
 
