@@ -80,8 +80,8 @@
                     </a>
                 </div>
                 <div class="user-access">
-                    <a href="./register">Register</a>
-                    <a href="./login" >/Sign in</a>
+                    <a href="/register">Register</a>
+                    <a href="/login" >/Sign in</a>
                 </div>
                 <nav class="main-menu mobile-menu">
                     <ul>

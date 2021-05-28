@@ -488,7 +488,7 @@ class admincontroller extends Controller
 
         $category->save();
         echo "<script>alert('Successfully Added Category');window.location='/addcategory';</script>";
-         echo "success";
+        echo "success";
 
     }
 
