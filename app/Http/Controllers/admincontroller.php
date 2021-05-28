@@ -213,11 +213,7 @@ class admincontroller extends Controller
         $data = registermodel::where('Name','=', session('sname'))->first();
         $getid=$data->id;
         $product=cartmodel::where('Customerid','=',$getid)->get();
-        $total=$products=DB::table('cartmodels')
-        ->join('productmodels','cartmodels.Productid','=','productmodels.id') 
-        ->where('cartmodels.Customerid',$getid)
-        ->sum('cartmodels.total');
-        return view('checkoutt',compact('product','total'));
+        return view('checkoutt',compact('product'));
 
     }
 
