@@ -38,6 +38,10 @@
                                 
                             </head>
                             <body oncontextmenu='return false' class='snippet-body'>
+                            <?php
+use App\Http\Controllers\admincontroller;
+$tp=admincontroller::total();
+?>
                             <div class="container">
     <div class="page-header">
         <h1>Invoice of Purchase </h1>
@@ -106,7 +110,7 @@
                                 
                                 <td><STRONG><h4>Total Amount:</h4></STRONG></td>
                                 <td></td>
-                                <td><STRONG><h4><i class="fas fa-rupee-sign"></i>{{$total}}</h4></STRONG></td>
+                                <td><STRONG><h4><i class="fas fa-rupee-sign"></i>{{$tp}}</h4></STRONG></td>
                                 </tr>
                     
 
@@ -118,7 +122,7 @@
                                     </td>
                                   
                                     <td class="text-left">
-                                        <h4 ><strong><i class="fas fa-rupee-sign" area-hidden="true"></i> {{$total}} </strong></h4>
+                                        <h4 ><strong><i class="fas fa-rupee-sign" area-hidden="true"></i> {{$tp}} </strong></h4>
                                     </td>
                                 </tr>
                             </tbody>

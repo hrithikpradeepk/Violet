@@ -238,15 +238,12 @@ class admincontroller extends Controller
         $product1=cartmodel::where('Customerid','=',$getid)->first();
         $cartid=$product1->id;
     
-        $total=$products=DB::table('cartmodels')
-        ->join('productmodels','cartmodels.Productid','=','productmodels.id') 
-        ->where('cartmodels.Customerid',$getid)
-        ->sum('cartmodels.total');
+        
         
         $dataorder=ordermodel::where('Customerid','=',$getid)->first();
         
 
-        return view('invoice',compact('product','total','cartid','dataorder'));
+        return view('invoice',compact('product','cartid','dataorder'));
 
     }
 
