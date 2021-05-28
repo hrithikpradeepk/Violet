@@ -87,7 +87,7 @@ $tp=admincontroller::total();
                                         <h5><strong>Quantity</strong></h5>
                                     </th>
                                     <th>
-                                        <h5><strong>Amount</strong></h5>
+                                        <h5><strong>Rate</strong></h5>
                                     </th>
                                 </tr>
                             </thead>
