@@ -1,6 +1,11 @@
 @extends('ctheme')
 @section('content')
 
+
+<?php
+use App\Http\Controllers\admincontroller;
+$tp=admincontroller::totalprice();
+?>
     <!-- Page Add Section Begin -->
     <section class="page-add cart-page-add">
         <div class="container">
@@ -73,7 +78,7 @@
              
                     <div class="col-lg-12">
                                 <h2><center>Total Amount</center</h2><BR>
-                              <td>  <h4><center>₹{{$total}}</center</h4></td>
+                              <td>  <h4><center>₹{{$tp}}</center</h4></td>
                                 <br>
                             </div>
                         </div>
