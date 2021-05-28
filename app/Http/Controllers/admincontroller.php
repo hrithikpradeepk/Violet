@@ -375,7 +375,7 @@ class admincontroller extends Controller
         $customerid = registermodel::where('Name','=', session('sname'))->first();
       
         $carts=DB::table('cartmodels')
-        ->where('Customerid','=', $customerId)->get();
+        ->where('Customerid','=', $customerid)->get();
 
         $total=0;
         foreach($carts as $cart)
