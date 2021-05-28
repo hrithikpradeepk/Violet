@@ -1,5 +1,10 @@
 @extends('ctheme')
 @section('content')
+<?php
+use App\Http\Controllers\admincontroller;
+$tp=admincontroller::total();
+?>
+
   <!-- Navbar -->
 
   <!--Main layout-->
@@ -210,7 +215,7 @@
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>Total</span>
-              <strong>₹{{$total}}</strong>
+              <strong>₹{{$tp}}</strong>
             </li>
           </ul>
           <!-- Cart -->

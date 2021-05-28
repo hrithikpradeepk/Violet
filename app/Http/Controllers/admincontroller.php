@@ -389,6 +389,25 @@ class admincontroller extends Controller
         }
     return $total;
     }
+
+    static public function total(){
+        $customerid = registermodel::where('Name','=', session('sname'))->first();
+        $getid=$customerid->id;
+        $carts=DB::table('cartmodels')
+        ->where('Customerid','=', $getid)->get();
+
+        $total=0;
+        foreach($carts as $cart)
+        {
+            $products=DB::table('productmodels')
+            ->where('id','=',$cart->Productid)->get();
+            foreach($products as $product)
+            {
+                $total=$total+($cart->total);
+            }
+        }
+    return $total;
+    }
     
 
     /**
