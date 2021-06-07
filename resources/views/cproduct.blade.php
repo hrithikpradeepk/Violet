@@ -84,7 +84,7 @@
                             </ul>
                         </li>
                         &nbsp;&nbsp;&nbsp; 
-                    <a href="#">
+                    <a href="/viewcart">
                         <img src="../img/icons/bag.png" alt="">
                     </a>
                     </ul>

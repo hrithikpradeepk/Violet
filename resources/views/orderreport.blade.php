@@ -295,13 +295,8 @@ $(document).ready(function(){
          <td> <h5 class="resume-title">{{$data->Orderdate }}</h5></td>
          <td>
          </tr>
-          @endforeach 
-    
-   
+         @endforeach 
 
-
-   
-   
     </table>
                             </div>
                         </div>
@@ -381,9 +376,6 @@ $(document).ready(function(){
 				</div>
 			</div>
 
-
-
-
 		</div>
     </footer>
     <!-- Footer Section End -->
@@ -433,7 +425,6 @@ $(document).ready(function(){
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-
 
 <script type="text/javascript" src="src/jquery-3.3.1.slim.min.js"></script>
 
